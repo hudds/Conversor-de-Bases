@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Conversor de Bases</string>
+    <string name="title_activity_conversor">ConversorActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="hintTextConversorBases">Digite um valor</string>
+</resources>

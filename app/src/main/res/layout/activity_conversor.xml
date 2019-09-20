@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2B2B2B"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        tools:context=".acticity.ui.ConversorActivity">
+
+        <EditText
+            android:id="@+id/editText_decimal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textCursorDrawable ="@null"
+            android:layout_marginEnd="20dp"
+            android:inputType="numberSigned"
+            android:hint="@string/hintTextConversorBases"
+            android:textColorHint="#B6B0AD"
+            android:textColor="#B6B0AD"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView_decimal"
+            app:layout_constraintTop_toBottomOf="@+id/textView_decimal" />
+
+        <EditText
+            android:id="@+id/editText_binario"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textCursorDrawable ="@null"
+            android:inputType="numberSigned"
+            android:hint="@string/hintTextConversorBases"
+            android:textColorHint="#B6B0AD"
+            android:textColor="#B6B0AD"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/editText_decimal"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView_binario"
+            app:layout_constraintTop_toBottomOf="@+id/textView_binario" />
+
+        <EditText
+            android:id="@+id/editText_octal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textCursorDrawable ="@null"
+            android:layout_margin="0dp"
+            android:inputType="numberSigned"
+            android:hint="@string/hintTextConversorBases"
+            android:textColorHint="#B6B0AD"
+            android:textColor="#B6B0AD"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/editText_binario"
+            app:layout_constraintHorizontal_bias="0.562"
+            app:layout_constraintStart_toStartOf="@+id/textView_octal"
+            app:layout_constraintTop_toBottomOf="@+id/textView_octal" />
+
+        <EditText
+            android:id="@+id/editText_hexadecimal"
+            android:layout_width="0dp"
+            android:textCursorDrawable ="@null"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:inputType="textCapCharacters"
+            android:hint="@string/hintTextConversorBases"
+            android:textColorHint="#B6B0AD"
+            android:textColor="#B6B0AD"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/editText_octal"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/textView_hexadecimal"
+            app:layout_constraintTop_toBottomOf="@+id/textView_hexadecimal" />
+
+        <TextView
+            android:id="@+id/textView_base_personalizado_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Base:"
+            android:textColor="#B6B0AD"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/editText_base_personalizado_1"
+            app:layout_constraintStart_toStartOf="@+id/textView_hexadecimal"
+            app:layout_constraintTop_toTopOf="@+id/editText_base_personalizado_1" />
+
+        <EditText
+            android:id="@+id/editText_numero_base_personalizado_1"
+            android:textCursorDrawable ="@null"
+            android:hint="@string/hintTextConversorBases"
+            android:textColorHint="#B6B0AD"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#B6B0AD"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/editText_base_personalizado_1"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/textView_base_personalizado_1"
+            app:layout_constraintTop_toBottomOf="@+id/editText_base_personalizado_1" />
+
+        <EditText
+            android:id="@+id/editText_base_personalizado_1"
+            android:layout_width="0dp"
+            android:textCursorDrawable ="@null"
+            android:hint="Digite uma base"
+            android:textColorHint="#B6B0AD"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:inputType="number"
+            android:textColor="#B6B0AD"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/editText_hexadecimal"
+            app:layout_constraintStart_toEndOf="@+id/textView_base_personalizado_1"
+            app:layout_constraintTop_toBottomOf="@+id/editText_hexadecimal" />
+
+        <TextView
+            android:id="@+id/textView_base_personalizado_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Base:"
+            android:textColor="#B6B0AD"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/editText_base_personalizado_2"
+            app:layout_constraintStart_toStartOf="@+id/textView_hexadecimal"
+            app:layout_constraintTop_toTopOf="@+id/editText_base_personalizado_2" />
+
+        <EditText
+            android:id="@+id/editText_numero_base_personalizado_2"
+            android:layout_width="0dp"
+            android:textCursorDrawable ="@null"
+            android:hint="@string/hintTextConversorBases"
+            android:textColorHint="#B6B0AD"
+            android:layout_height="wrap_content"
+            android:textColor="#B6B0AD"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/editText_base_personalizado_2"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/textView_base_personalizado_2"
+            app:layout_constraintTop_toBottomOf="@+id/editText_base_personalizado_2" />
+
+        <EditText
+            android:id="@+id/editText_base_personalizado_2"
+            android:layout_width="0dp"
+            android:textCursorDrawable ="@null"
+            android:hint="Digite uma base"
+            android:textColorHint="#B6B0AD"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:inputType="number"
+            android:textColor="#B6B0AD"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/editText_base_personalizado_1"
+            app:layout_constraintStart_toEndOf="@+id/textView_base_personalizado_2"
+            app:layout_constraintTop_toBottomOf="@+id/editText_numero_base_personalizado_1" />
+
+        <TextView
+            android:id="@+id/textView_decimal"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:text="Decimal"
+            android:textColor="#B6B0AD"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_octal"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:text="Octal"
+            android:textColor="#B6B0AD"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/textView_binario"
+            app:layout_constraintTop_toBottomOf="@+id/editText_binario" />
+
+        <TextView
+            android:id="@+id/textView_hexadecimal"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:text="Hexadecimal"
+            android:textColor="#B6B0AD"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/textView_octal"
+            app:layout_constraintTop_toBottomOf="@+id/editText_octal" />
+
+        <TextView
+            android:id="@+id/textView_binario"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:text="Binario"
+            android:textColor="#B6B0AD"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/textView_decimal"
+            app:layout_constraintTop_toBottomOf="@+id/editText_decimal" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
